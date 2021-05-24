@@ -1,6 +1,6 @@
 # Projeto Escolar CRUD de Cliente e Produto usando MongoDB, Express e React / School Project CRUD Client and Product using MongoDB, Express and React 
 
-## Funções/ Functions 
+## Funções / Functions 
 
 - Criação de Cliente e Produto / Create Client and Product
 - Editar Cliente e Produto / Update Client and Product
@@ -11,8 +11,8 @@
 
 ### `npm install` 
  
-# Iniciando o Backend 
+# Iniciando o Backend / Init project 
 
-Após a instalação do Backend entre na pasta `src` e inicie o projeto com o comando :
+Após a instalação do Backend entre na pasta `src` e inicie o projeto com o comando : / After installing Backend, enter the `src` folder and start the project with the command:
 
 ### `node index.js`
