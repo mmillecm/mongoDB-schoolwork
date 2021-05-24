@@ -43,7 +43,24 @@ router.post('/users', async (req, res) => {
         if (user == null) {
             return res.status(400).send({ error: 'Verifique user e senha' })
         }
-        return res.send({msg: "Login Sucesso"})
+        return res.send({ msg: "Login Sucesso" })
+    }
+    catch (err) {
+        return res.status(400).send({ error: 'Verifique user e senha' })
+    }
+})
+router.get('/users/init', async (req, res) => {
+    try {
+        const info = {
+            "name": "ADM",
+            "username": "adm",
+            "password": "adm"
+        }
+        const user = await User.create(info)
+        if (user == null) {
+            return res.status(400).send({ error: 'Verifique user e senha' })
+        }
+        return res.send({ msg: "Sucesso! Username: adm  Senha: adm" })
     }
     catch (err) {
         return res.status(400).send({ error: 'Verifique user e senha' })
